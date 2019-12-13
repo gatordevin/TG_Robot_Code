@@ -4,7 +4,7 @@
 
 
 from app.Robot import Controller, Py_Hat
-from My_Custom_Code import my_custom_teleop
+from My_Custom_Code import my_custom_teleop, my_custom_autonomous
 from time import sleep
 import os
 
@@ -19,7 +19,9 @@ while True:
     if value == False:
         break
     else:
-        my_custom_teleop()
+        print("custom code")
+        #my_custom_teleop()
+        my_custom_autonomous()
     sleep(.01)
 
 
